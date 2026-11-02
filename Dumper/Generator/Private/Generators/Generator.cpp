@@ -42,7 +42,7 @@ void Generator::InitEngineCore()
 	/* Multiversus [Unsupported, weird GObjects-struct] */
 	//InitObjectArrayDecryption([](void* ObjPtr) -> uint8* { return reinterpret_cast<uint8*>(uint64(ObjPtr) ^ 0x1B5DEAFD6B4068C); });
 
-	ObjectArray::Init();
+	ObjectArray::Init(true);
 
 	CALL_PLATFORM_SPECIFIC_FUNCTION(FName::Init);
 
